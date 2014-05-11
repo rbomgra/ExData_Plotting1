@@ -17,7 +17,7 @@ plot(wDays,hpc$Voltage,type="l", xlab="datetime", ylab="Voltage")
 plot(wDays, hpc$Sub_metering_1, type="l", col=color[1],xlab="", ylab="Energy sub metering")
 lines(wDays,hpc$Sub_metering_2, type="l",col=color[2])
 lines(wDays,hpc$Sub_metering_3, type="l",col=color[3])
-legend('topright', names(hpc[7:9]), lty=1, col=colors)
+legend('topright', names(hpc[7:9]), lty=1, col=color, bty="n", xjust=1)
 plot(wDays,hpc$Global_reactive_power,type="l", xlab="datetime",ylab="Global_reactive_power")
 
 # 3.- Copy to png file
